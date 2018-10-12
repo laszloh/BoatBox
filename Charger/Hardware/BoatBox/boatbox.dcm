@@ -1,0 +1,19 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TestPoint
+D test point
+K test point tp
+F ~
+$ENDCMP
+#
+$CMP UBD
+D positive voltage power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP UBR
+D positive voltage power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+#End Doc Library

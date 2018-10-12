@@ -1,0 +1,270 @@
+EESchema Schematic File Version 4
+LIBS:BoatBox-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:IPD50R380CE T202
+U 1 1 5BBF3F04
+P 5400 3400
+AR Path="/5BBF382C/5BBF3F04" Ref="T202"  Part="1" 
+AR Path="/5BBF64A9/5BBF3F04" Ref="T?"  Part="1" 
+AR Path="/5BBF64B5/5BBF3F04" Ref="T?"  Part="1" 
+AR Path="/5BBF64BD/5BBF3F04" Ref="T?"  Part="1" 
+AR Path="/5BC2AEB2/5BBF3F04" Ref="T302"  Part="1" 
+AR Path="/5BC2C274/5BBF3F04" Ref="T402"  Part="1" 
+AR Path="/5BC2D636/5BBF3F04" Ref="T502"  Part="1" 
+F 0 "T502" H 5606 3446 50  0000 L CNN
+F 1 "IPD50R380CE" H 5606 3355 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 5600 3325 50  0001 L CIN
+F 3 "https://www.infineon.com/dgdl/Infineon-IPD50R380CE-DS-v02_01-en.pdf?fileId=db3a30433ecb86d4013ed0a2ef580f38" H 5200 3700 50  0001 L CNN
+	1    5400 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3400 5150 3400
+Wire Wire Line
+	5500 3600 5500 3800
+Wire Wire Line
+	5500 4300 5150 4300
+Text HLabel 4800 3400 0    50   Input ~ 0
+ctrl
+Text HLabel 4800 4300 0    50   UnSpc ~ 0
+GND
+Wire Wire Line
+	5500 2850 6250 2850
+Wire Wire Line
+	5500 2850 5500 3200
+Text HLabel 7050 2850 2    50   Output ~ 0
+out
+$Comp
+L Device:R R202
+U 1 1 5BBF5152
+P 6250 3050
+AR Path="/5BBF382C/5BBF5152" Ref="R202"  Part="1" 
+AR Path="/5BBF64A9/5BBF5152" Ref="R?"  Part="1" 
+AR Path="/5BBF64B5/5BBF5152" Ref="R?"  Part="1" 
+AR Path="/5BBF64BD/5BBF5152" Ref="R?"  Part="1" 
+AR Path="/5BC2AEB2/5BBF5152" Ref="R302"  Part="1" 
+AR Path="/5BC2C274/5BBF5152" Ref="R402"  Part="1" 
+AR Path="/5BC2D636/5BBF5152" Ref="R502"  Part="1" 
+F 0 "R502" V 6200 3050 50  0000 C BNN
+F 1 "100k" V 6300 3050 50  0000 C TNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 3050 50  0001 C CNN
+F 3 "~" H 6250 3050 50  0001 C CNN
+	1    6250 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R203
+U 1 1 5BBF51AA
+P 6250 3700
+AR Path="/5BBF382C/5BBF51AA" Ref="R203"  Part="1" 
+AR Path="/5BBF64A9/5BBF51AA" Ref="R?"  Part="1" 
+AR Path="/5BBF64B5/5BBF51AA" Ref="R?"  Part="1" 
+AR Path="/5BBF64BD/5BBF51AA" Ref="R?"  Part="1" 
+AR Path="/5BC2AEB2/5BBF51AA" Ref="R303"  Part="1" 
+AR Path="/5BC2C274/5BBF51AA" Ref="R403"  Part="1" 
+AR Path="/5BC2D636/5BBF51AA" Ref="R503"  Part="1" 
+F 0 "R503" V 6200 3700 50  0000 C BNN
+F 1 "470k" V 6300 3700 50  0000 C TNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6180 3700 50  0001 C CNN
+F 3 "~" H 6250 3700 50  0001 C CNN
+	1    6250 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4300 5700 4300
+Wire Wire Line
+	6250 4300 6250 3850
+Connection ~ 5500 4300
+Wire Wire Line
+	6250 3200 6250 3350
+Wire Wire Line
+	6250 2900 6250 2850
+Connection ~ 6250 2850
+Wire Wire Line
+	6250 2850 7050 2850
+Wire Wire Line
+	6250 3350 6350 3350
+Connection ~ 6250 3350
+Wire Wire Line
+	6250 3350 6250 3550
+$Comp
+L Transistor_FET:BSS138 T203
+U 1 1 5BBF56E4
+P 6550 3350
+AR Path="/5BBF382C/5BBF56E4" Ref="T203"  Part="1" 
+AR Path="/5BBF64A9/5BBF56E4" Ref="T?"  Part="1" 
+AR Path="/5BBF64B5/5BBF56E4" Ref="T?"  Part="1" 
+AR Path="/5BBF64BD/5BBF56E4" Ref="T?"  Part="1" 
+AR Path="/5BC2AEB2/5BBF56E4" Ref="T303"  Part="1" 
+AR Path="/5BC2C274/5BBF56E4" Ref="T403"  Part="1" 
+AR Path="/5BC2D636/5BBF56E4" Ref="T503"  Part="1" 
+F 0 "T503" H 6755 3396 50  0000 L CNN
+F 1 "BSS138" H 6755 3305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6750 3275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 6550 3350 50  0001 L CNN
+	1    6550 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 4300 6650 4300
+Wire Wire Line
+	6650 4300 6650 3550
+Connection ~ 6250 4300
+Wire Wire Line
+	6650 3150 6650 3050
+Wire Wire Line
+	6650 3050 7050 3050
+Text HLabel 7050 3050 2    50   Output ~ 0
+~err
+$Comp
+L Transistor_BJT:BC847 T201
+U 1 1 5BD8465A
+P 5250 3800
+AR Path="/5BBF382C/5BD8465A" Ref="T201"  Part="1" 
+AR Path="/5BC2D636/5BD8465A" Ref="T501"  Part="1" 
+AR Path="/5BC2AEB2/5BD8465A" Ref="T301"  Part="1" 
+AR Path="/5BC2C274/5BD8465A" Ref="T401"  Part="1" 
+F 0 "T501" H 5440 3846 50  0000 L CNN
+F 1 "BC847" H 5440 3755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5450 3725 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657" H 5250 3800 50  0001 L CNN
+	1    5250 3800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R201A201
+U 1 1 5BD8486B
+P 5500 4050
+AR Path="/5BBF382C/5BD8486B" Ref="R201A201"  Part="1" 
+AR Path="/5BBF64A9/5BD8486B" Ref="R?"  Part="1" 
+AR Path="/5BBF64B5/5BD8486B" Ref="R?"  Part="1" 
+AR Path="/5BBF64BD/5BD8486B" Ref="R?"  Part="1" 
+AR Path="/5BC2AEB2/5BD8486B" Ref="R301A301"  Part="1" 
+AR Path="/5BC2C274/5BD8486B" Ref="R401A401"  Part="1" 
+AR Path="/5BC2D636/5BD8486B" Ref="R501A501"  Part="1" 
+F 0 "R501A501" V 5450 4050 50  0000 C BNN
+F 1 "1R" V 5550 4050 50  0001 C TNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5430 4050 50  0001 C CNN
+F 3 "~" H 5500 4050 50  0001 C CNN
+	1    5500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 4200 5500 4300
+Wire Wire Line
+	5150 4000 5150 4300
+Connection ~ 5150 4300
+Wire Wire Line
+	5150 3600 5150 3400
+Connection ~ 5150 3400
+Wire Wire Line
+	5450 3800 5500 3800
+Connection ~ 5500 3800
+Wire Wire Line
+	5500 3800 5500 3900
+$Comp
+L Device:R R201B201
+U 1 1 5BD84FDE
+P 5700 4050
+AR Path="/5BBF382C/5BD84FDE" Ref="R201B201"  Part="1" 
+AR Path="/5BBF64A9/5BD84FDE" Ref="R?"  Part="1" 
+AR Path="/5BBF64B5/5BD84FDE" Ref="R?"  Part="1" 
+AR Path="/5BBF64BD/5BD84FDE" Ref="R?"  Part="1" 
+AR Path="/5BC2AEB2/5BD84FDE" Ref="R301B301"  Part="1" 
+AR Path="/5BC2C274/5BD84FDE" Ref="R401B401"  Part="1" 
+AR Path="/5BC2D636/5BD84FDE" Ref="R501B501"  Part="1" 
+F 0 "R501B501" V 5650 4050 50  0000 C BNN
+F 1 "1R" V 5750 4050 50  0001 C TNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5630 4050 50  0001 C CNN
+F 3 "~" H 5700 4050 50  0001 C CNN
+	1    5700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R201C201
+U 1 1 5BD85004
+P 5900 4050
+AR Path="/5BBF382C/5BD85004" Ref="R201C201"  Part="1" 
+AR Path="/5BBF64A9/5BD85004" Ref="R?"  Part="1" 
+AR Path="/5BBF64B5/5BD85004" Ref="R?"  Part="1" 
+AR Path="/5BBF64BD/5BD85004" Ref="R?"  Part="1" 
+AR Path="/5BC2AEB2/5BD85004" Ref="R301C301"  Part="1" 
+AR Path="/5BC2C274/5BD85004" Ref="R401C401"  Part="1" 
+AR Path="/5BC2D636/5BD85004" Ref="R501C501"  Part="1" 
+F 0 "R501C501" V 5850 4050 50  0000 C BNN
+F 1 "1R" V 5950 4050 50  0000 C TNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5830 4050 50  0001 C CNN
+F 3 "~" H 5900 4050 50  0001 C CNN
+	1    5900 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4200 5700 4300
+Connection ~ 5700 4300
+Wire Wire Line
+	5700 4300 5900 4300
+Wire Wire Line
+	5900 4200 5900 4300
+Connection ~ 5900 4300
+Wire Wire Line
+	5900 4300 6250 4300
+Wire Wire Line
+	5500 3800 5700 3800
+Wire Wire Line
+	5700 3800 5700 3900
+Wire Wire Line
+	5700 3800 5900 3800
+Wire Wire Line
+	5900 3800 5900 3900
+Connection ~ 5700 3800
+Wire Wire Line
+	4800 3400 5150 3400
+Wire Wire Line
+	4800 4300 5150 4300
+$Comp
+L boatbox:TestPoint P?
+U 1 1 5CA7456D
+P 5700 3800
+AR Path="/5CA7456D" Ref="P?"  Part="1" 
+AR Path="/5BBF382C/5CA7456D" Ref="P201"  Part="1" 
+AR Path="/5BC2AEB2/5CA7456D" Ref="P301"  Part="1" 
+AR Path="/5BC2C274/5CA7456D" Ref="P401"  Part="1" 
+AR Path="/5BC2D636/5CA7456D" Ref="P501"  Part="1" 
+F 0 "P501" H 5700 3920 50  0000 C BNN
+F 1 "TestPoint" H 5758 3829 50  0001 L CNN
+F 2 "" H 5900 3800 50  0001 C CNN
+F 3 "~" H 5900 3800 50  0001 C CNN
+	1    5700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L boatbox:TestPoint P?
+U 1 1 5CA7495F
+P 6250 3350
+AR Path="/5CA7495F" Ref="P?"  Part="1" 
+AR Path="/5BBF382C/5CA7495F" Ref="P202"  Part="1" 
+AR Path="/5BC2AEB2/5CA7495F" Ref="P302"  Part="1" 
+AR Path="/5BC2C274/5CA7495F" Ref="P402"  Part="1" 
+AR Path="/5BC2D636/5CA7495F" Ref="P502"  Part="1" 
+F 0 "P502" V 6250 3460 50  0000 L CNN
+F 1 "TestPoint" H 6308 3379 50  0001 L CNN
+F 2 "" H 6450 3350 50  0001 C CNN
+F 3 "~" H 6450 3350 50  0001 C CNN
+	1    6250 3350
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
